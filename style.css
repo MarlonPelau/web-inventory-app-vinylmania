@@ -27,7 +27,7 @@ header {
 
 .record-logo {
     width: 100vw;
-    height: 65vh;
+    height: 60vh;
 }
 
 .record-logo img {
@@ -81,5 +81,19 @@ input, select {
     color: #031304;
     font-size: 14px;
     padding: 25px;
-    height: 35vh;
+    height: 40vh;
   }
+
+.submit, .reset {
+    width: 100px;
+}
+/* 
+  @media screen and (max-width: 600px){
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .record-logo img {
+        width: 65%;
+    }
+  } */

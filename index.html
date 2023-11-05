@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="scripts/main.js" defer></script>
     <title>web inventory app - vinylmania</title>
 </head>
 <body>
@@ -48,8 +47,8 @@
                         <p><a href="https://www.turntablelab.com/products/nas-illmatic-lp">Released in 1994...</a></p>
                     </aside>
                     <aside>
-                        <button>In-stock</button>
-                        <button>Remove</button>
+                        <button class="inventory">In-stock</button>
+                        <button class="delete">Remove</button>
                     </aside>
                 </div>
             </article>
@@ -66,8 +65,8 @@
                         <p><a href="https://www.turntablelab.com/products/nas-illmatic-lp">Released in 1994...</a></p>
                     </aside>
                     <aside>
-                        <button>In-stock</button>
-                        <button>Remove</button>
+                        <button class="inventory">In-stock</button>
+                        <button class="delete">Remove</button>
                     </aside>
                 </div>
             </article>
@@ -84,8 +83,8 @@
                         <p><a href="https://www.turntablelab.com/products/nas-illmatic-lp">Released in 1994...</a></p>
                     </aside>
                     <aside>
-                        <button>In-stock</button>
-                        <button>Remove</button>
+                        <button class="inventory">In-stock</button>
+                        <button class="delete">Remove</button>
                     </aside>
                 </div>
             </article>
@@ -102,8 +101,8 @@
                         <p><a href="https://www.turntablelab.com/products/nas-illmatic-lp">Released in 1994...</a></p>
                     </aside>
                     <aside>
-                        <button>In-stock</button>
-                        <button>Remove</button>
+                        <button class="inventory">In-stock</button>
+                        <button class="delete">Remove</button>
                     </aside>
                 </div>
             </article>
@@ -111,26 +110,32 @@
         <footer>
             <form action="">
                 <h2>Add New Vinyl</h2>
-                <label for="title">title</label>
-                <input id="title" name="title" type="text" required />
-
-                <label for="artist">artist</label>
-                <input id="artist" name="artist" type="text" required>
-
-                <label for="price">price</label>
-                <input id="price" name="price" type="number" required>
-
-                <label for="release year">release year</label>
-                <input id="release year" type="number">
-
-                <label for="in-stock">in-stock</label>
-                <select name="in-stock" id="in-stock" required>
-                    <option value="yup">in-stock</option>
-                    <option value="nope">out of stock</option>
-                  </select>
+                <!-- <div> -->
+                    <label for="title">title</label>
+                    <input id="title" name="title" type="text" required />
+    
+                    <label for="artist">artist</label>
+                    <input id="artist" name="artist" type="text" required>
+    
+                    <label for="price">price</label>
+                    <input id="price" name="price" type="number" required>
+    
+                    <label for="release year">release year</label>
+                    <input id="release year" type="number">
+    
+                    <label for="in-stock">in-stock</label>
+                    <select name="in-stock" id="in-stock">
+                        <option value="yup">in-stock</option>
+                        <option value="nope">out of stock</option>
+                    </select>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <button class="reset">Reset</button>
+                    <button class="submit">Submit</button>
+                <!-- </div> -->
             </form>
         </footer>
     </div>
-    
+    <script src="scripts/main.js"></script>
 </body>
 </html>
