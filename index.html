@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="scripts/main.js" defer></script>
+    <title>web inventory app - vinylmania</title>
+</head>
+<body>
+    <header>
+        <h1>vinylmania</h1>
+        <nav>
+            <h2>"no vax in-store, just wax galore!"</h2>
+        </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Search</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2021/03/9e0707c1.png?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="image of diggin' in the crates for vinyl">
+            <article>
+                <h3>why vinyl?</h3>
+                <p>
+                    Within various music streaming platforms of today, there's no song or album that can 
+                    compare to the sound-quality of vinyl. Here at 'vinylmania' most of our in-stock releases are 
+                    delivered straight from the record pressing plant to us. We do occasionally have 
+                    high-quality, secondhand vinyl of rare records that's no longer in the process of being 
+                    reprinted. If quality of music and rare collectibles are your thing, get the vinyl.
+                </p>
+
+            </article>
+        </section>
+
+    </main>
+    <section>
+        <div class="container">
+            <div class="item">🦋</div> <img src="https://www.turntablelab.com/cdn/shop/products/nas-illmatic_7cb9037b-57d6-4874-bbf6-496059aa7d7c_1200x1200.jpg?v=1571263088" alt="">
+            <div class="item">🦜</div>
+            <div class="item">🐙</div>
+            <div class="item">🦚</div>
+            <div class="item">🦃</div>
+            <div class="item">🐶</div>
+            <div class="item">🦊</div>
+            <div class="item">🐼</div>
+            <div class="item">🐝</div>
+          </div>
+          <fieldset>
+            <legend>new vinyl to add?</legend>
+            <div>
+                <label for="title">title</label>
+              </div>
+              <input id="title" name="title" type="text" required />
+            <div>
+                <label for="artist">artist</label>
+            </div>
+            <input id="artist" name="artist" type="text" required>
+            <div>
+                <label for="price">price</label>
+                <div>
+                    <input id="price" name="price" type="number" required>
+                </div>
+                <label for="release date">release date</label>
+                <div>
+                    <input id="release date" type="number">
+                </div>
+            </div>
+            <select name="in-stock" id="in-stock" required>
+                <option value="yup">yup</option>
+                <option value="nope">nope</option>
+              </select>
+              <label for="in-stock">in-stock</label>
+          </fieldset>
+    </section>
+    <footer>© 2023 vinylmania, LTD.</footer>
+    
+</body>
+</html>
