@@ -10,6 +10,13 @@
 <body>
     <div class="container">
         <header>
+            <marquee behavior="scroll" direction="left">
+                Within various music streaming platforms of today, there's no song or album that can 
+                compare to the sound-quality of vinyl. At 'vinylmania' most of their in-stock releases are 
+                delivered straight from the record pressing plant. Occasionally, they do have 
+                high-quality, secondhand vinyl of rare records that's no longer in the repressing process for 
+                reprint. If quality of music, top-notch sound n' rare collectibles are your thing, get the vinyl. &mdash; Questlove
+            </marquee>
             <div class="record-logo">
                 <img src="./images/vinymainalogo.png" alt="vinylmania logo">
             </div>
@@ -26,18 +33,6 @@
             </nav> -->
             <!-- <section>
                 <img class="record-shop" src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2021/03/9e0707c1.png?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="image of diggin' in the crates for vinyl">
-                <article>
-                    <h3><strong>why vinyl?</strong></h3>
-                    <p>
-                        "Within various music streaming platforms of today, there's no song or album that can 
-                        compare to the sound-quality of vinyl. At 'vinylmania' most of their in-stock releases are 
-                        delivered straight from the record pressing plant. Occasionally, they do have 
-                        high-quality, secondhand vinyl of rare records that's no longer in the repressing process for 
-                        reprint. If quality of music, top-notch sound n' rare collectibles are your thing, get the vinyl."
-                        (Questlove)
-                    </p>
-    
-                </article>
             </section> -->
         </header>
         <main class="grid-container">
@@ -114,32 +109,26 @@
             </article>
         </main>
         <footer>
-            <fieldset>
-                <legend>new vinyl to add?</legend>
-                <div>
-                    <label for="title">title</label>
-                  </div>
-                  <input id="title" name="title" type="text" required />
-                <div>
-                    <label for="artist">artist</label>
-                </div>
+            <form action="">
+                <h2>Add New Vinyl</h2>
+                <label for="title">title</label>
+                <input id="title" name="title" type="text" required />
+
+                <label for="artist">artist</label>
                 <input id="artist" name="artist" type="text" required>
-                <div>
-                    <label for="price">price</label>
-                    <div>
-                        <input id="price" name="price" type="number" required>
-                    </div>
-                    <label for="release year">release year</label>
-                    <div>
-                        <input id="release year" type="number">
-                    </div>
-                </div>
+
+                <label for="price">price</label>
+                <input id="price" name="price" type="number" required>
+
+                <label for="release year">release year</label>
+                <input id="release year" type="number">
+
+                <label for="in-stock">in-stock</label>
                 <select name="in-stock" id="in-stock" required>
-                    <option value="yup">yup</option>
-                    <option value="nope">nope</option>
+                    <option value="yup">in-stock</option>
+                    <option value="nope">out of stock</option>
                   </select>
-                  <label for="in-stock">in-stock</label>
-              </fieldset>
+            </form>
         </footer>
     </div>
     

@@ -50,16 +50,27 @@ header {
     flex-direction: row;
 }
 
+marquee {
+    color: chartreuse;
+}
+
 nav ul li a {
     color: chartreuse;
     text-align: left;
 }
 
 
-fieldset {
+form {
+    color: #3E2B69;
+    display: flex;
+    flex-direction: column;
     background: url(https://static.vecteezy.com/system/resources/previews/004/998/381/original/music-notes-and-vintage-vinyl-records-seamless-pattern-elements-of-the-pattern-are-separated-from-the-white-background-free-vector.jpg);
+    padding: 5px 20px;
 }
 
+input, select {
+    width: 40%;
+}
 
   footer {
     position: fixed;
@@ -67,10 +78,8 @@ fieldset {
     left: 0;
     width: 100%;
     background: #845bde;
-    /* background: #7a88ef; */
     color: #031304;
     font-size: 14px;
     padding: 25px;
-    text-align: right;
     height: 35vh;
   }
