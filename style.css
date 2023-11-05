@@ -11,9 +11,19 @@ header {
     width: auto;
   }
 
+  h1 {
+    font-size: xx-large;
+    font-style: italic;
+  }
+
 h2 {
     font-size: smaller;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+    text-decoration: solid;
 }
 
 main img {
@@ -24,9 +34,43 @@ main img {
   object-position: 50% 50%;
   width: 99.7%;
 }
+
+article h3 {
+    font-family: fantasy;
+    text-align: center;
+}
+
 nav ul li a {
     color: chartreuse;
     text-align: left;
+}
+
+main section article img {
+    src: format(smaller);
+}
+
+/* main aside {
+    font-size: 14px;
+  }
+  
+  main aside {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+main .posts {
+    column-gap: 30px;
+    display: grid;
+    line-height: 1.5;
+    margin: 25px 0;
+  }
+
+main .posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  } */
+
+fieldset {
+    background: url(https://static.vecteezy.com/system/resources/previews/004/998/381/original/music-notes-and-vintage-vinyl-records-seamless-pattern-elements-of-the-pattern-are-separated-from-the-white-background-free-vector.jpg);
 }
 
 
