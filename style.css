@@ -1,43 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background: #845bde;
+    padding: 25px;
+    margin-bottom: 35vh;
+}
+
 header {
     background: #845bde;
     color: #030a01;
     padding: 20px;
     text-align: center;
-  };
-
-  .logo img {
-    height: 25px;
-    margin: 0;
-    width: auto;
-  }
-
-  h1 {
-    font-size: xx-large;
-    font-style: italic;
-  }
-
-h2 {
-    font-size: smaller;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-    text-align: center;
-    text-decoration: solid;
+.record-logo {
+    width: 100vw;
+    height: 65vh;
 }
 
-main img {
+.record-logo img {
+    height: 100%;
+    width: 35%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.image-container img {
     border: 2px solid #020417;
-  border-radius: 3px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 99.7%;
+    border-radius: 3px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
-article h3 {
-    font-family: fantasy;
-    text-align: center;
+.content-container {
+    display: flex;
+    flex-direction: row;
 }
 
 nav ul li a {
@@ -45,29 +55,6 @@ nav ul li a {
     text-align: left;
 }
 
-main section article img {
-    src: format(smaller);
-}
-
-/* main aside {
-    font-size: 14px;
-  }
-  
-  main aside {
-    display: inline-block;
-    margin-right: 5px;
-  }
-
-main .posts {
-    column-gap: 30px;
-    display: grid;
-    line-height: 1.5;
-    margin: 25px 0;
-  }
-
-main .posts {
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
 
 fieldset {
     background: url(https://static.vecteezy.com/system/resources/previews/004/998/381/original/music-notes-and-vintage-vinyl-records-seamless-pattern-elements-of-the-pattern-are-separated-from-the-white-background-free-vector.jpg);
@@ -75,9 +62,15 @@ fieldset {
 
 
   footer {
-    background: #7a88ef;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #845bde;
+    /* background: #7a88ef; */
     color: #031304;
     font-size: 14px;
     padding: 25px;
     text-align: right;
+    height: 35vh;
   }
