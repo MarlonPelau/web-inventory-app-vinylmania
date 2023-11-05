@@ -41,16 +41,23 @@ form.addEventListener('submit', createNewAlbum)
 
 function createNewAlbum(event){
     event.preventDefault();
-    console.log('clicked', event)
-
+    
     const title = document.getElementById('title').value
     const artist = document.getElementById('artist').value
     const price = document.getElementById('price').value
-
+    
+    console.log('clicked', title, artist, price)
     // create a new article .. add image, 
     const article = document.createElement("article");
-    article.textContent = title
+    const paragraph = document.createElement("p");
+    const image = document.createElement("img");
+    image.setAttribute("src", "https://www.turntablelab.com/cdn/shop/products/nas-illmatic_7cb9037b-57d6-4874-bbf6-496059aa7d7c_1200x1200.jpg?v=1571263088")
+    image.style.width = "100%";
+    paragraph.textContent = `${title} ${artist} $${price}`
+
     grid.prepend(article)
+    article.appendChild(image)
+    article.appendChild(paragraph)
 
 
     // if(title.value == "" || artist.value == "" || price.value == ""){
