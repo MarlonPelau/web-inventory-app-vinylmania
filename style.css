@@ -7,6 +7,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    width: 100vh;
 }
 
 .grid-container {
@@ -15,7 +16,7 @@
     grid-gap: 10px;
     background: #845bde;
     padding: 25px;
-    margin-bottom: 35vh;
+    margin-bottom: 40vh;
 }
 
 header {
@@ -54,10 +55,10 @@ marquee {
     color: chartreuse;
 }
 
-nav ul li a {
+/* nav ul li a {
     color: chartreuse;
     text-align: left;
-}
+} */
 
 
 form {
@@ -87,13 +88,30 @@ input, select {
 .submit, .reset {
     width: 100px;
 }
-/* 
+
+button {
+    border: 0;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+
   @media screen and (max-width: 600px){
     .grid-container {
         grid-template-columns: 1fr 1fr;
+        padding: 0;
+        grid-gap: 0;
 
     }
     .record-logo img {
         width: 65%;
     }
-  } */
+
+    footer {
+        padding: 0;
+    }
+  }

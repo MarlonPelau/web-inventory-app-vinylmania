@@ -60,23 +60,9 @@ function createNewAlbum(event){
     article.appendChild(paragraph)
 
 
-    // if(title.value == "" || artist.value == "" || price.value == ""){
-    //     // create a new list item element
-        
-
-    // } else {
-    //     /// do something else
-    //     form.reset()
-    //     // add new article to index.html
-    // }
+    if(!title.value == "" || !artist.value == "" || !price.value == ""){
+        // do soemthing
+        form.reset()
+    }
 
 }
-
-// [03] Form Reset
-// const reset = document.querySelector('.reset');
-
-// form.addEventListener('click', resetForm)
-
-// function resetForm(){
-//     form.reset()
-// }
