@@ -7,7 +7,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    min-height: 100vh;
 }
 
 .grid-container {
@@ -17,18 +17,21 @@
     background: #845bde;
     padding: 25px;
     margin-bottom: 40vh;
+    justify-items: center;
 }
 
 header {
     background: #845bde;
     color: #030a01;
-    padding: 20px;
     text-align: center;
 }
 
 .record-logo {
     width: 100vw;
     height: 60vh;
+    background: url("./images/vinymainalogo.png") no-repeat;
+    background-position: top center;
+    background-size: 40%;
 }
 
 .record-logo img {
@@ -36,6 +39,13 @@ header {
     width: 35%;
     object-fit: cover;
     object-position: top center;
+}
+
+.record-logo h1{
+    font-family: 'Courgette', cursive;
+    font-size: 6em;
+    margin: 0;
+    color: white;
 }
 
 .image-container img {
@@ -55,12 +65,6 @@ marquee {
     color: chartreuse;
 }
 
-/* nav ul li a {
-    color: chartreuse;
-    text-align: left;
-} */
-
-
 form {
     color: #3E2B69;
     display: flex;
@@ -70,7 +74,7 @@ form {
 }
 
 input, select {
-    width: 40%;
+    width: 30%;
 }
 
   footer {

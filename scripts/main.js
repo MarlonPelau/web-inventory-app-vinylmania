@@ -52,7 +52,7 @@ function createNewAlbum(event){
     const paragraph = document.createElement("p");
     const image = document.createElement("img");
     image.setAttribute("src", "https://www.turntablelab.com/cdn/shop/products/nas-illmatic_7cb9037b-57d6-4874-bbf6-496059aa7d7c_1200x1200.jpg?v=1571263088")
-    image.style.width = "100%";
+    image.style.height = "300px";
     paragraph.textContent = `${title} ${artist} $${price}`
 
     grid.prepend(article)
@@ -65,4 +65,5 @@ function createNewAlbum(event){
         form.reset()
     }
 
+    form.reset()
 }
